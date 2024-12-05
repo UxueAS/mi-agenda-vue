@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AppHeader />
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <EventsCalendar />
+      </div>
+      <div class="col-md-4">
+        <TodoList />
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <ContactList />
+        </div>
+        <div class="row">
+          <NotesList />
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AppHeader from './components/AppHeader'
+import EventsCalendar from './components/EventsCalendar'
+import TodoList from './components/TodoList'
+import ContactList from './components/ContactList'
+import NotesList from './components/NotesList'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {AppHeader, EventsCalendar, TodoList, ContactList, NotesList}
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
