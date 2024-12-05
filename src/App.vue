@@ -2,17 +2,18 @@
   <AppHeader />
   <div class="container">
     <div class="row mt-4">
-      <div class="col-md-4">
+      <div class="col-md-4 border-end px-2">
         <EventsCalendar />
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 border-end px-2">
         <TodoList />
       </div>
       <div class="col-md-4">
         <div class="row">
           <ContactList />
         </div>
-        <div class="row">
+        <hr>
+        <div class="row px-2">
           <NotesList />
         </div>
       </div>
