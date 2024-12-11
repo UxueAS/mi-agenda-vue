@@ -33,6 +33,103 @@
   </div>
 </template>
 
+
+
+
+
+<style scoped>
+
+
+.todo-list {
+  font-family: 'courier', 'Georgia', serif;
+}
+
+
+.row {
+  background-color: #fcebd0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+  margin-top: 0px;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.236);
+  font-family: 'courier', 'Georgia', serif;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+
+}
+
+
+.nueva {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+
+
+.todo-list button {
+  padding: 4px 15px;
+  background-color: #7b9e87;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.todo-list button:hover {
+  background-color: #4a4a4a;
+}
+
+
+.todo-list ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+
+}
+
+.todo-list ul li input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #7b9e87;
+  cursor: pointer;
+
+}
+
+.todo-list ul li:hover { 
+  color: #7b9e87;
+  font-weight: bold;
+}
+
+
+.todo-list h2 {
+  font-weight: bold;
+  font-family: 'courier', 'Georgia', serif;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding-top: 20px;
+  padding: 5px;
+  color: #7e7666;
+
+  margin: 7px;
+  margin-bottom: -10px;
+  background-color: #a1b5a8;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.364);
+
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+</style>
+
+
 <script>
 export default {
   name: 'TodoList',
@@ -77,21 +174,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.events-calendar {
-  padding: 20px;
-}
-
-.event {
-  margin-bottom: 20px;
-}
-
-.event h3 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.event p {
-  margin: 0;
-}
-</style>
