@@ -1,45 +1,37 @@
-<template class="stiker">
-  <div class="notes-list">
-    <h2 class="lasnotas">Notas</h2>
-    <ul>
-      <li v-for="note in notes" :key="note.id">
-        {{ note.text }}
-      </li>
-    </ul>
+
+
+<template>
+  <div class="stiker">
+    <h2>NOTAS</h2>
+    <div class="notas">
+      <div v-for="note in notes" :key="note.id">
+        <p>{{ note.text }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
 
 
-
+<script>
+export default {
+  name: 'NotesList',
+  data() {
+    return {
+      notes: [
+        { id: 1, text: 'Nota 1' },
+        { id: 2, text: 'Nota 2' },
+        { id: 3, text: 'Nota 3' },
+        { id: 4, text: 'Nota 4' }
+      ]
+    };
+  }
+};
+</script>
 
 <style scoped>
-ul {
-  font-family: 'courier', 'Georgia', serif;
-  padding-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 7px;
-  width: 100%;
-  justify-content: center;
 
-}
-
-.lasnotas {
-  color: #7e7666;
-  text-align: center;
-  padding: 5px;
-  margin: 5px;
-  background-color: #a1b5a875;
-  border-radius: 5px;
-  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.23);
-
-  font-weight: bold;
-  margin-top: 10px;
-
-}
-
-.stiker{
+.stiker {
   font-family: 'courier', 'Georgia', serif;
   font-weight: 600;
   margin: 10px;
@@ -49,7 +41,32 @@ ul {
   background-color: #a4b8aba0;
 }
 
-li {
+
+h2 {
+  color: #7e7666;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  background-color: #a1b5a875;
+  border-radius: 5px;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.23);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.notas {
+  font-family: 'courier', 'Georgia', serif;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7px;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.notas div {
   background-color: #fcebd0;
   display: flex;
   flex-direction: column;
@@ -64,24 +81,5 @@ li {
   min-width: 100px;
   max-width: 250px;
   height: 150px;
-
 }
-
 </style>
-
-<script>
-export default {
-  name: 'NotesList',
-  data() {
-    return {
-      notes: [
-        { id: 1, text: 'Nota 1' },
-        { id: 2, text: 'Nota 2' },
-        { id: 3, text: 'Nota 3' },
-        { id: 3, text: 'Nota 4' }
-      ]
-    };
-  }
-};
-</script>
-

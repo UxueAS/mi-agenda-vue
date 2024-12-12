@@ -1,6 +1,6 @@
 <template>
   <div class="contacts">
-    <h2>Contact List</h2>
+    <h2>CONTACTOS</h2>
     <ul>
       <li v-for="contact in contacts" :key="contact.id">
         {{ contact.name }} - {{ contact.email }}
@@ -8,6 +8,7 @@
           </ul>
         </div>
       </template>
+
 
 
 <style scoped>
@@ -18,16 +19,19 @@
   font-weight: 600;
   margin: 10px;
   margin-top: 0px;
-  padding: 10px;
+
   border-radius: 8px;
   box-shadow: 6px 2px 5px rgba(0, 0, 0, 0.374);
   background-color: #a4b8aba0;
 }
 
+
+
 .contacts ul {
   list-style: disc;
   margin: 5px 10px;
   margin-top: 20px;
+  padding: 20px;
 }
 
 .contacts li {
@@ -36,6 +40,7 @@
   color: #4a4a4a;
 
 }
+
 
 .contacts h2 {
   color: #7e7666;
@@ -48,13 +53,13 @@
   margin-top: 10px;
 }
 
-
-
 .contacts ul li:hover {
   color: #c28d42;
   text-decoration: underline;
 }
 </style>
+
+
 <script>
   export default {
     name: 'ContactList',
@@ -76,48 +81,3 @@
   };
 </script>
 
-<style scoped>
-.contacts {
-  padding: 10px;
-
-  font-family: 'courier', 'Georgia', serif;
-  font-weight: 600;
-  margin: 10px;
-  margin-top: 0px;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 6px 2px 5px rgba(0, 0, 0, 0.374);
-  background-color: #a4b8aba0;
-}
-
-.contacts ul {
-  list-style: disc;
-  margin: 5px 10px;
-  margin-top: 20px;
-}
-
-.contacts li {
-  margin-bottom: 10px;
-  font-size: 0.9em;
-  color: #4a4a4a;
-
-}
-
-.contacts h2 {
-  color: #7e7666;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #e0dad180;
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-}
-
-
-
-.contacts ul li:hover {
-  color: #c28d42;
-  text-decoration: underline;
-}
-</style>

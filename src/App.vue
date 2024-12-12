@@ -3,7 +3,7 @@
   <br /><br />
 
   <div class="container">
-    <!-- Primera fila -->
+  
     <div class="row">
       <div class="col-md-8 px-2" id="calendario">
         <EventsCalendar />
@@ -14,7 +14,7 @@
     </div>
     <br /><br />
 
-    <!-- Segunda fila -->
+   
     <div class="row mt-4">
       <div class="col-md-7 px-2" id="todo">
         <TodoList />
@@ -46,13 +46,12 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.row {
-  margin-bottom: 1rem;
-}
+ * {
+   color: #7b9e87;
+   cursor: pointer;
 
+
+
+ }
 </style>
 
