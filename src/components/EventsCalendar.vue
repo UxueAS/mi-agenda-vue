@@ -93,6 +93,7 @@ export default {
   gap: 20px;
 }
 
+
 .event { 
   display: flex;
   flex-direction: column;

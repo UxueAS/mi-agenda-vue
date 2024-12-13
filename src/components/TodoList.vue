@@ -164,6 +164,7 @@ export default {
   border-radius: 5px 5px 0 0;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.364);
 
+  
   font-weight: bold;
   margin-top: 10px;
 }
