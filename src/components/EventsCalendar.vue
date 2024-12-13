@@ -93,7 +93,7 @@ export default {
   gap: 20px;
 }
 
-.event {
+.event { 
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -158,7 +158,6 @@ export default {
   padding-top: 20px;
   padding: 5px;
   color: #7e7666;
-
   margin: 7px;
   margin-bottom: -10px;
   background-color: #a1b5a8;

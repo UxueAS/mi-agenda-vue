@@ -26,6 +26,7 @@ export default {
 }
 
 
+
  h1 {
   font-family: 'courier', 'Georgia', serif;
   color: #495f50;
